@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}- FlaskApp</title>
+    
+  
+  <style>
+
+          body{
+            background-color: #F0FFFF;
+          }
+         .container1{
+                margin-top:10rem;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                position:relative;
+                flex-wrap:wrap;
+          }
+          
+          
+          .card1{
+                position:relative;
+                max-width:300px;
+                height:215px;
+                background:#fff;
+                margin:30px 30px 30px 0;
+                padding:20px 15px 20px 15px;
+                display:flex;
+                flex-direction:column;
+                box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+                transition:0.3s ease-in-out;
+            
+          }
+          
+          .container1 .card1:hover{
+               height:420px;
+               
+               transform: scale(1.2);
+               display:block;
+          }
+          
+          
+          .container1 .card1 .imgBx{
+                position:relative;
+                padding:20px 15px 20px 15px;
+                width:260px;
+                height:260px;
+                top:-60px;
+                left:20px;
+                z-index:1;
+                box-shadow:0 5px 20px rgba(0,0,0,0.2);
+          }
+          
+          
+          .container1 .card1 .imgBx img{
+                max-width:100%;
+                border-radius:4px;
+                transform: scale(1.2);
+          }
+          
+          
+          .container1 .card1 .content{
+                position:relative;
+                margin-top: -140px;
+                padding: 10px 15px;
+                text-align: center;
+                color:#111;
+                visibility: hidden;
+                opacity:0;
+                transition:0.3s ease-in-out;
+          }
+          
+          .container1 .card1:hover .content{
+                visibility:visible;
+                opacity:1;
+                margin-top:-40px;
+                transition-delay:0.3s;
+                
+          }
+          
+          
+          
+          .card2{
+                position:relative;
+                max-width:300px;
+                height:215px;
+                background:#fff;
+                margin:30px 30px 30px 0;
+                padding:20px 15px 20px 15px;
+                display:flex;
+                flex-direction:column;
+                box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+                transition:0.3s ease-in-out;
+            
+          }
+          
+          .container1 .card2:hover{
+               height:420px;
+               transform: scale(1.2);
+               display:block;
+          }
+          
+          
+          .container1 .card2 .imgBx{
+                position:relative;
+                padding:20px 15px 20px 15px;
+                width:260px;
+                height:260px;
+                top:-60px;
+                left:20px;
+                z-index:1;
+                overflow:none;
+                box-shadow:0 5px 20px rgba(0,0,0,0.2);
+          }
+          
+          
+          .container1 .card2 .imgBx img{
+                max-width:100%;
+                border-radius:4px;
+                transform: scale(1.2);
+          }
+          
+          
+          .container1 .card2 .content{
+                position:relative;
+                margin-top: -140px;
+                padding: 10px 15px;
+                text-align: center;
+                color:#111;
+                visibility: hidden;
+                opacity:0;
+                transition:0.3s ease-in-out;
+          }
+          
+          .container1 .card2:hover .content{
+                visibility:visible;
+                opacity:1;
+                margin-top:-40px;
+                transition-delay:0.3s;
+                
+          }
+          
+           
+          
+          .card3{
+                position:relative;
+                max-width:300px;
+                height:215px;
+                background:#fff;
+                margin:30px 30px 30px 0;
+                padding:20px 15px 20px 15px;
+                display:flex;
+                flex-direction:column;
+                box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+                transition:0.3s ease-in-out;
+            
+          }
+          
+          .container1 .card3:hover{
+               height:420px;
+               transform: scale(1.2);
+           
+          }
+          
+          
+          .container1 .card3 .imgBx{
+                position:relative;
+                width:260px;
+                height:260px;
+                top:-60px;
+                left:20px;
+                z-index:1;
+                box-shadow:0 5px 20px rgba(0,0,0,0.2);
+                overflow:none;
+          }
+          
+          
+          .container1 .card3 .imgBx img{
+                max-width:100%;
+                border-radius:4px;
+                transform: scale(1.2);
+          }
+          
+          
+          .container1 .card3 .content{
+                position:relative;
+                margin-top: -140px;
+                padding: 10px 15px;
+                text-align: center;
+                color:#111;
+                visibility: hidden;
+                opacity:0;
+                transition:0.3s ease-in-out;
+          }
+          
+          .container1 .card3:hover .content{
+                visibility:visible;
+                opacity:1;
+                margin-top:-40px;
+                transition-delay:0.3s;
+                
+          }
+               
+               
+               
+               
+                
+              	
+		
+    </style>
+   
+   
+ </head>
+  
+<body>
+
+  
+  
+  <div class="container1">
+  
+     <div class="card1">
+     
+        <div class="imgBx">
+             <img src="https://www.totaljobs.com/advice/wp-content/uploads/how-to-fill-in-an-application-form-compressor-1024x576.jpg" class="img-fluid"/>
+        </div>
+        <div class="content">
+           <h5 class="card-title">Fill Details</h5>
+	    <p class="card-text">You can provide your basic information here..</p>
+	    
+	    <a href="/create/" class="btn btn-primary">Click</a>
+        </div>
+     </div>
+   
+     <div class="card2">
+ 
+        <div class="imgBx">
+             <img src="https://img.freepik.com/free-vector/man-going-trip-booking-tour-online-guy-sitting-front-computer-table-looking-voyage-summer-vacation_575670-946.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713398400&semt=ais" class="img-fluid"/>
+        </div>
+        <div class="content">
+           <h5 class="card-title">View Profile</h5>
+	    <p class="card-text">
+            You can check out the data you inputted here.</p>
+	    <a href="/view/" class="btn btn-primary">Click</a>
+        </div>
+     </div>
+   
+     <div class="card3">
+     
+        <div class="imgBx">
+             <img src="https://static.vecteezy.com/system/resources/thumbnails/021/203/546/small_2x/4k-career-future-animation-new-job-opportunity-or-visionary-to-success-in-work-concept-businessman-riding-office-chair-using-telescope-to-see-future-and-the-way-forward-free-video.jpg" class="img-fluid"/>
+        </div>
+        <div class="content">
+            <h5 class="card-title">View Jobs</h5>
+	    <p class="card-text">You can see the upcoming job opportunities here..</p>
+	    <a href="/view_jobs" class="btn btn-primary">Click</a>
+        </div>
+     </div>
+  </div>
+
+  
+  
+  
+  
+
+</body>
+</html>
+
+{% endblock %}
+
